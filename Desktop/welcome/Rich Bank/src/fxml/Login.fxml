@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="449.0" prefWidth="696.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
+   <children>
+      <ImageView fitHeight="632.0" fitWidth="753.0" layoutY="-22.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-22.0">
+         <image>
+            <Image url="@../images/itlocity-reloded.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane layoutX="696.0" layoutY="2.0" opacity="0.92" prefHeight="449.0" prefWidth="0.0" style="-fx-background-color: black;" />
+      <AnchorPane layoutX="264.0" layoutY="61.0" opacity="0.52" prefHeight="414.0" prefWidth="270.0" style="-fx-background-color: #ffffff;" AnchorPane.bottomAnchor="135.0" AnchorPane.leftAnchor="264.0" AnchorPane.rightAnchor="219.0" AnchorPane.topAnchor="61.0">
+         <children>
+            <JFXTextField fx:id="txt" labelFloat="true" layoutX="53.0" layoutY="160.0" prefHeight="25.0" prefWidth="165.0" promptText="UserName" style="-fx-background-color: white;" unFocusColor="WHITE" />
+            <JFXPasswordField fx:id="pass" labelFloat="true" layoutX="54.0" layoutY="221.0" prefHeight="15.0" prefWidth="165.0" promptText="Password" style="-fx-background-color: white;" unFocusColor="WHITE" />
+            <JFXButton fx:id="login" buttonType="RAISED" layoutX="87.0" layoutY="274.0" prefHeight="32.0" prefWidth="99.0" ripplerFill="#101879" style="-fx-background-color: #1a3365;" text="Login" textFill="WHITE" />
+            <JFXButton fx:id="user" buttonType="RAISED" layoutX="86.0" layoutY="325.0" onAction="#signIn" prefHeight="32.0" prefWidth="99.0" ripplerFill="#087224" style="-fx-border-color: #1a3365;" text="User?" />
+            <Label fx:id="label" layoutX="69.0" layoutY="107.0" prefHeight="32.0" prefWidth="136.0" text="        Admin Login" textFill="#141414">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="69.0" fitWidth="90.0" layoutX="88.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/rich%20bank%20main.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
